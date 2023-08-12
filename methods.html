@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+
+        * {
+            list-style: none;
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            
+        }
+        body {
+            background-color: #6d78b8;
+        }
+        header {
+            
+            max-width: 800px;
+            margin: 0 auto;
+
+        }
+
+        header ul {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            font-size: 1.5rem;
+            
+            
+        }
+
+        header .active a {
+            background-color:#464d77;
+            padding: 2rem;
+            
+        }
+        header ul li a {
+            color: #fff;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            background-color: #464d77;
+            padding: 2rem;
+            border-radius: 2rem;
+           
+            animation: fade .4s forwards ease ;
+        }
+        .img-container {
+            display: flex;
+        }
+
+        .img-container img{
+            
+           margin: 2rem auto 0 auto;
+           border-radius: 2rem;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .cta-container {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+  .lista img{
+    aspect-ratio: 4 / 5;
+    width: 400px;
+    border-radius: 2rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    text-indent: 10px;
+  }
+
+  .item {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+  }
+
+  .item p {
+    grid-column: 1 / -1;
+  }
+
+  
+
+  .ctap {
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .item > p {
+    background-color: #464d77;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    position: relative;
+    
+  }
+
+  .item > p::before {
+    content: "";
+    width: 120px;
+    height: 15px;
+    border-radius: 2rem;
+    position: absolute;
+    left: -105px;
+    top: 20px;
+    background-color: #313750;
+  }
+
+
+
+  @keyframes fade {
+    from {
+        transform: translateX(-20px);
+     opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+     opacity: 1;
+    }
+     
+  }
+
+  strong {
+    font-size: 1.7rem;
+  }
+    </style>
+    <header>
+        <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li class="active"><a href="">Methods</a></li>
+        </ul>
+    </header>
+
+    <div class="container anima">
+        <h1>Effective Weight Loss Techniques</h1>
+        <ul class="lista">
+          <li class="item">
+            <p><strong>Mindful Eating:</strong> Practice mindful eating to better understand hunger and fullness cues. Savor each bite and reduce overeating.</p>
+            <img src="./imgs/mind.jpg" alt="">
+           
+
+            <div class="ctap">
+                <p>To know the product click below:</p>
+                <a class="cta-button" href="https://go.hotmart.com/B85563065X">Learn More</a>
+            </div>
+           
+          </li>
+
+
+          <li class="item">
+            <p><strong>Regular Physical Activity:</strong> Engage in regular exercise to boost metabolism and burn calories. Combine cardio and strength training for best results.</p>
+            <img src="./imgs/physical.jpg" alt="">
+           
+
+            <div class="ctap">
+                <p>To know the product click below:</p>
+                <a class="cta-button" href="https://go.hotmart.com/T85756714G">Learn More</a>
+            </div>
+          </li>
+          <li class="item">
+            <p><strong>Balanced Diet:</strong> Adopt a balanced diet rich in whole foods. Include fruits, vegetables, lean proteins, and healthy fats to support weight loss.</p>
+            <img src="./imgs/diet.jpg" alt="">
+           
+
+            <div class="ctap">
+                <p>To know the product click below:</p>
+                <a class="cta-button" href="https://go.hotmart.com/K85756833S">Learn More</a>
+            </div>
+          </li>
+        </ul>
+    </div>
+   
+</html>
